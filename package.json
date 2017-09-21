@@ -1,0 +1,19 @@
+{
+    "name": "test",
+    "version": "1.0.1",
+    "description": "A minimal Electron application",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "keywords": [
+      "Electron"
+    ],
+    "author": "GitHub",
+    "license": "CC0-1.0",
+    "devDependencies": {
+      "electron": "latest",
+      "npm": "latest",
+      "pixi.js": "latest"
+    }
+  }
