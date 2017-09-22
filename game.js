@@ -11,8 +11,10 @@ var Container = PIXI.Container,
     Graphics = PIXI.Graphics;
 
 var stage = new Container(),
-    renderer = autoDetectRenderer(800, 600);
+    renderer = autoDetectRenderer(document.body.offsetWidth, document.body.offsetHeight);
     document.body.appendChild(renderer.view);
+
+    renderer.autoResize = true;
 
 loader.add("images/treasureHunter.json").load(setup);
 
@@ -138,7 +140,6 @@ function setup() {
 
     //Left arrow key `press` method
     left.press = function() {
-        //Change the explorer's velocity when the key is pressed
         explorer.vx = -5;
         explorer.vy = 0;
     };
